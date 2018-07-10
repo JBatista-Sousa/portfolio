@@ -1,0 +1,32 @@
+header{
+    background: rgb(107, 238, 172);
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 5px; 
+
+}
+
+footer{
+    background: rgb(107, 238, 172);
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    margin-top: 5px; 
+}
+
+nav{
+    background: rgb(216, 203, 203);
+    width: 100%;
+    margin-bottom: 5px;
+    
+
+}
+
+.nav-item{
+    left: 0px;
+    
+    
+
+}
+
