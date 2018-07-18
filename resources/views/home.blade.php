@@ -1,8 +1,9 @@
 @extends('layouts.homeTemplate')
 
 @section('conteudo')
+<link rel="stylesheet" href="{{asset('css/styleHome.css')}}">
 
-<div class="container">
+<div class="container" class="central">
       <div class="row">
         <div class="col-md-12 estilo">
           <h1> Portfólio </h1>

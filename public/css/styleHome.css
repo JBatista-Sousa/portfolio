@@ -1,0 +1,11 @@
+
+.navbar.custom {
+    width: 50%;
+    float: right; 
+    margin: 0 auto;
+    margin-top:-50px;
+  }
+
+.central{
+    float: right;
+}

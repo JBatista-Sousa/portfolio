@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 
- 
+  <link rel="stylesheet" href="{{asset('css/styleHome.css')}}">
 
 </head>
 <body>
@@ -20,10 +20,7 @@
   <div class="row">
     <header class="page-header">
       <h1> Portfólio </h1>
-    </header>
-  </div>
-  
-  <nav class="navbar navbar-default navbar-static-top">
+      <nav class="navbar navbar-default custom">
     <div class="container">
       <div class="row">
         <div class="col-md-12 estilo">
@@ -46,6 +43,12 @@
       </div>
     </div>
   </nav>
+    </header>
+  </div>
+  
+  <!--<nav class="navbar navbar-default navbar-static-top">-->
+  <!--<nav class="navbar navbar-default" role="navigation">-->
+  
 
   @yield('navegacao')
   @yield('conteudo')
