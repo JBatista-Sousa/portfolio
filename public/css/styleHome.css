@@ -1,11 +1,36 @@
 
-.navbar.custom {
+.navbar.inverse {
     width: 50%;
     float: right; 
     margin: 0 auto;
     margin-top:-50px;
   }
 
-.central{
-    float: right;
+ .centro {
+    margin-top:120px;
+    text-align: center;
+    width: 600px;
+    height: 200px;
+   
+   
+}
+.container-centralizado {
+	position: relative;
+	
+    left: 25%;
+    
+}
+
+body {
+    background-image: url(fundo.jpeg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background: rgba(107, 240, 195, 0.973);
+    
+
+
+
+    
+
 }

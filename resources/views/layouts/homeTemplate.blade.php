@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
 
 
   <link rel="stylesheet" href="{{asset('css/styleHome.css')}}">
@@ -17,7 +18,27 @@
 
 <div class="container">
 
-  <div class="row">
+<div class="row">
+
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Portfólio</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="{{action('CursoController@cadastro')}}">Cursos</a></li> 
+        <li><a href="#">Professores</a></li> 
+      </ul>
+    </div>
+    </nav>
+</div>
+
+</div>
+
+
+  <!--<div class="row">
     <header class="page-header">
       <h1> Portfólio </h1>
       <nav class="navbar navbar-default custom">
@@ -44,21 +65,15 @@
     </div>
   </nav>
     </header>
-  </div>
+  </div>-->
   
   <!--<nav class="navbar navbar-default navbar-static-top">-->
   <!--<nav class="navbar navbar-default" role="navigation">-->
-  
-
   @yield('navegacao')
   @yield('conteudo')
+  
   @yield('rodape')
-
-  
-
-  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
   
 </body>
 </html>

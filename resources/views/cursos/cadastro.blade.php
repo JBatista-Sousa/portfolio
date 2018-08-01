@@ -24,30 +24,10 @@
         <input id="nome" class="form-control" type="text" name="nome" placeholder="Nome do curso">
       </div>
 
-        
-
       <div class="form-group">
         <label for="descricao">Descrição</label>
         <textarea class="form-control" name="descricao"></textarea>
       </div>
-      
-      <div class="control-group">
-        <label for="modulo">Módulo</label>
-        <div class="controls">
-          <input class="form-control" name="modulo" placeholder="Informe a quantidade de módulo" type="text">
-        </div>
-      </div>
-
-
-      <!--<div class="form-group">
-        <label for="modulo">Informe a quantidade de módulos do curso</label>
-        <select class="form-control" name="modulo">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-        </select>
-      </div>-->
 
       <div class="form-group">
         <label for="coordenador">Informe o nome do coordenador</label>

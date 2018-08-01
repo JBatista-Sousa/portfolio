@@ -17,7 +17,6 @@ class CreateCursosTable extends Migration
           $table->increments('id');
           $table->string('nome');
           $table->text('descricao');
-          $table->string('modulo');
           $table->string('coordenador');
           $table->string('cargaHoraria');
           $table->timestamps();
