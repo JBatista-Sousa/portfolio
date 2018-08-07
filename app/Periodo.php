@@ -8,6 +8,12 @@ class Periodo extends Model{
     protected $fillable = ['nome','cargaHoraria'];
 
     public function curso(){
-        //return $this->hasMany('App\Curso');
+        return $this->belongsTo('App\Curso');
+        //belongsTo = pertence a um curso
+    }
+
+    public function disciplina(){
+        return $this->hasMany('App\Disciplina');
+        //hasMany -> tem muitos // um periodo tem muitas disciplinas
     }
 }

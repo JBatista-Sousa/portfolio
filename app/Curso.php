@@ -9,10 +9,12 @@ class Curso extends Model {
 
     public function professor(){
         return $this->belongsToMany('App\Professor');
+        //belongsToMany -> pertence a muitos
     }
 
     public function periodo(){
         return $this->hasMany('App\Periodo');
+        //hasMany -> tem muitos periodos
     }
 }
 //Henrique Alves Xavier

@@ -15,7 +15,6 @@ class CursoTableSeeder extends Seeder
           0 => [
             'nome' => 'Informatica',
             'descricao' => 'otimo curso',
-            'modulo' => 3,
             'coordenador' => 'Fernando',
             'cargaHoraria' => 220
           ],
@@ -23,7 +22,6 @@ class CursoTableSeeder extends Seeder
           1 => [
             'nome' => 'Quimica',
             'descricao' => 'Superior',
-            'modulo' => 6,
             'coordenador' => 'Flavia',
             'cargaHoraria' => 130
           ]
