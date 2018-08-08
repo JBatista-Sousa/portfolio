@@ -7,9 +7,6 @@
     <b>Descrição:</b> {{$curso->descricao}}
   </li>
   <li>
-    <b>Modulo:</b> {{$curso->modulo}}
-  </li>
-  <li>
     <b>Coordenador:</b> {{$curso->coordenador}}
   </li>
   <li>
