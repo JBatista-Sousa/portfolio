@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Professor extends Model{
-    protected $fillable = ['nome', 'formacao'];
+    protected $fillable = ['nome', 'formacao', 'titulacao'];
 
     public function curso(){
         return $this->belongsToMany('App\Curso');

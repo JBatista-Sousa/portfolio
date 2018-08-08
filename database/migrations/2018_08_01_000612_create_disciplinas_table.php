@@ -18,6 +18,8 @@ class CreateDisciplinasTable extends Migration
             $table->string('nome');
             $table->text('descricao');
             $table->string('cargaHoraria');
+            $table->integer('professor_id');
+            $table->integer('periodo_id');
             $table->timestamps();
         });
     }

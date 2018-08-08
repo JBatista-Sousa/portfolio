@@ -6,12 +6,12 @@
 <img src="{{ asset('img/images.jpeg') }}" />
 <img src="{{ asset('img/images.jpeg') }}" />
 <img src="{{ asset('img/images.jpeg') }}" />-->
-<img src="{{ asset('img/images.jpeg') }}" />
+
 
   <div class="container-centralizado">
-    <div class="row">
+    <div class="principal row banner w-100">
       <!--<div class="col-md-12 estilo">-->
-      <div class="col-md-12 centro">
+      <div class="text-center">
       
      
         <h1> Portfólio </h1>
