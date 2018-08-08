@@ -1,26 +1,23 @@
-@extends('layouts.homeTemplate')
+@extends('layouts.app')
 
-@section('conteudo')
-<!--<link rel="stylesheet" href="{{asset('css/styleHome.css')}}">-->
-<!--<img src="{{ asset('img/fundo.jpeg') }}" />
-<img src="{{ asset('img/images.jpeg') }}" />
-<img src="{{ asset('img/images.jpeg') }}" />
-<img src="{{ asset('img/images.jpeg') }}" />-->
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-  <div class="container-centralizado">
-    <div class="principal row banner w-100">
-      <!--<div class="col-md-12 estilo">-->
-      <div class="text-center">
-      
-     
-        <h1> Portfólio </h1>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero provident assumenda soluta aspernatur alias corrupti eaque odit ad unde ducimus tempora possimus asperiores, perferendis, et explicabo nihil non laboriosam repellat!</p>
-          <input type="submit" class="btn btn-primary" name="" value="Conhecer">
-        
-      </div>
+                    You are logged in!
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-
+</div>
 @endsection

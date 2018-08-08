@@ -43,3 +43,7 @@ Route::post('/cursos/{id}', 'CursoController@update');
 
 
 //professores
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
