@@ -29,8 +29,6 @@ Route::get('/cursos/{id}/destroy', 'CursoController@destroy');
 
 Route::get('/cursos/{id}/edita', 'CursoController@edita');
 
-
-
 Route::post('/cursos/{id}', 'CursoController@update');
 
 //Route::post('/cursos/update', 'CursoController@update');
@@ -45,3 +43,7 @@ Route::post('/cursos/{id}', 'CursoController@update');
 
 
 //professores
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

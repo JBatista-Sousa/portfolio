@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Curso extends Model {
     protected $fillable = ['nome', 'descricao', 'coordenador', 'cargaHoraria'];
 
-    public function professor(){
+    public function professores(){
         return $this->belongsToMany('App\Professor');
         //belongsToMany -> pertence a muitos
     }
 
-    public function periodo(){
+    public function periodos(){
         return $this->hasMany('App\Periodo');
         //hasMany -> tem muitos periodos
     }

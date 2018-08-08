@@ -6,6 +6,17 @@
     margin-top:-50px;
   }
 
+.principal {
+    border: 1px solid blue;
+}
+
+
+.centro {
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 40%;
+}
+/* 
  .centro {
     margin-top:120px;
     text-align: center;
@@ -19,18 +30,27 @@
 	
     left: 25%;
     
-}
+} */
 
-body {
+/* .central {
+    position: relative;
+    width: 100%;
+    background-size: 
+} */
+
+
+
+/* body {
     background-image: url(fundo.jpeg);
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
     background: rgba(107, 240, 195, 0.973);
-    
+} */
 
-
-
-    
+body {
+    background: url('/img/728817.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 
 }
