@@ -6,7 +6,7 @@ Route::get('/', function () {
 
 // Home
 
-Route::get('/', 'HomeController@home');
+Route::get('/home', 'HomeController@home');
 
 
 
@@ -32,6 +32,40 @@ Route::get('/cursos/{id}/edita', 'CursoController@edita');
 Route::post('/cursos/{id}', 'CursoController@update');
 
 //Route::post('/cursos/update', 'CursoController@update');
+
+
+
+//Disciplinas
+Route::get('/disciplinas/cadastro', 'DisciplinaController@cadastro');
+
+Route::get('/disciplinas', 'DisciplinaController@lista');
+
+Route::get('/disciplinas/{id}', 'DisciplinaController@mostra');
+
+Route::post('/disciplinas', 'DisciplinaController@adiciona');
+
+Route::get('/disciplinas/{id}/destroy', 'DisciplinaController@destroy');
+
+Route::get('/disciplinas/{id}/edita', 'DisciplinaController@edita');
+
+Route::post('/disciplinas/{id}', 'DisciplinaController@update');
+
+
+//Professores
+Route::get('/professores/cadastro', 'ProfessorController@cadastro');
+
+Route::get('/professores', 'ProfessorController@lista');
+
+Route::get('/professores/{id}', 'ProfessorController@mostra');
+
+Route::post('/professores', 'ProfessorController@adiciona');
+
+Route::get('/professores/{id}/destroy', 'ProfessorController@destroy');
+
+Route::get('/professores/{id}/edita', 'ProfessorController@edita');
+
+Route::post('professores/{id}', 'ProfessorController@update');
+
 
 
 

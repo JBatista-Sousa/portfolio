@@ -21,7 +21,7 @@
 
       <div class="form-group">
         <label for="nome">Nome</label>
-        <input id="nome" class="form-control" type="text" name="nome" placeholder="Nome do curso">
+        <input id="nome" class="form-control" type="text" name="nome" placeholder="Nome da Disciplina">
       </div>
 
       <div class="form-group">

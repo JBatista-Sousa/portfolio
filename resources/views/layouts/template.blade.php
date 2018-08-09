@@ -5,20 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
-  <!--<link href="assets/css/bootstrap.min.css" rel="stylesheet">--> 
-
-  <!--////////////////////////////////////////////////////////////////////////////////////////-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
-   <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
-
-  <!--////////////////////////////////////////////////////////////////////////////////////////-->
-   
-  <!--<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">-->
   <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
 </head>
@@ -31,7 +19,7 @@
       <h1> Portfólio | IFPI-CAPAU </h1>
     </header>
   </div>
-  
+
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <div class="row">
@@ -47,9 +35,9 @@
             <li class="nav-item">
             <a class="nav-link" href="{{action('DisciplinaController@cadastro')}}">Disciplinas</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="{{action('PeriodoController@cadastro')}}">Periodos</a>
-            </li>
+            </li> -->
             <li class="nav-item">
             <a class="nav-link" href="{{action('ProfessorController@cadastro')}}">Professores</a>
             </li>
@@ -58,7 +46,7 @@
       </div>
     </div>
   </nav>
-  
+
 
 @yield('navegacao')
 @yield('conteudo')

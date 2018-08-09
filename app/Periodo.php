@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Periodo extends Model{
-    protected $fillable = ['nome','cargaHoraria'];
+    protected $fillable = ['nome'];
 
     public function curso(){
         return $this->belongsTo('App\Curso');
