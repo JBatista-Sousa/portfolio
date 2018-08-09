@@ -13,7 +13,6 @@
       <tr>
         <th>Nome</th>
         <th>Descricao</th>
-        <th>Modulo</th>
         <th>Coordenador</th>
         <th>CargaHoraria</th>
         <th>Ação</th>
@@ -22,7 +21,6 @@
       <tr>
         <td>{{$curso->nome}}</td>
         <td>{{$curso->descricao}}</td>
-        <td>{{$curso->modulo}}</td>
         <td>{{$curso->coordenador}}</td>
         <td>{{$curso->cargaHoraria}}</td>
 
@@ -51,7 +49,7 @@
               <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
             </button>
            </a>
-          
+
 
           <!--<button type="button" class="btn btn-default" aria-label="Left Align">
           <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
@@ -76,7 +74,7 @@
           <form action="{{url('/cursos/destroy')}}" method="post">
               <input type="hidden" name="id" value="{{$curso->id}}">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
-              
+
               <button type="submit" class="btn btn-danger">
                 <span class="glyphicon glyphicon-trash">Deletar</span>
               </button>
@@ -91,6 +89,3 @@
     </body>
   </div>
   @endsection
-
-
-  
