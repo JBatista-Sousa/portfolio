@@ -39,19 +39,19 @@
 
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link" href="">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Alunos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Professores</a>
+              <a class="nav-link" href="">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{action('CursoController@cadastro')}}">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Eventos</a>
+            <a class="nav-link" href="{{action('DisciplinaController@cadastro')}}">Disciplinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{action('PeriodoController@cadastro')}}">Periodos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{{action('ProfessorController@cadastro')}}">Professores</a>
             </li>
           </ul>
         </div>
