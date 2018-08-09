@@ -33,15 +33,6 @@ Route::post('/cursos/{id}', 'CursoController@update');
 
 //Route::post('/cursos/update', 'CursoController@update');
 
-
-
-
-
-
-
-
-
-
 //professores
 
 Auth::routes();
