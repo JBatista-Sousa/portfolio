@@ -70,14 +70,14 @@
           <a class="nav-link" href="/professores">
             <span>Professores</span></a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="/periodos">
             <span>Períodos</span></a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link" href="/disciplinas">
             <span>Disciplinas</span></a>
-        </li>
+        </li> -->
       </ul>
 
       <div id="content-wrapper">
