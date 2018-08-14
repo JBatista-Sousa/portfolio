@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 });
 
 // Home
@@ -79,5 +79,3 @@ Route::post('professores/{id}', 'ProfessorController@update');
 //professores
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

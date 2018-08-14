@@ -29,7 +29,7 @@ class CursoController extends Controller{
 
 
   public function mostra($id){
-   // $resposta = DB::select('select * from cursos where id = ?',[$id]);
+    // $resposta = DB::select('select * from cursos where id = ?',[$id]);
     $resposta = Curso::find($id);
     if (empty($resposta)) {
       return "Esse curso não existe";
@@ -46,16 +46,16 @@ class CursoController extends Controller{
 
   public function update(CursosRequest $request, $id){
     //return "atualizando {$id}";
-   
+
     //recupera o curso pelo id e atualiza as informaçoes que chegaram no request
     Curso::find($id)->update($request->all());
-   
-   
-   return redirect()->action('CursoController@lista');
+
+
+    return redirect()->action('CursoController@lista');
   }
 
-  
-  public function destroy($id) {   
+
+  public function destroy($id) {
     $curso = Curso::find($id);
     $curso->delete();
     //Request::session()->flash('status', 'O Curso '.$curso->nome.' foi removido com sucesso!');
@@ -66,10 +66,3 @@ class CursoController extends Controller{
 
 
 }
-
-
-
-
-
-
-

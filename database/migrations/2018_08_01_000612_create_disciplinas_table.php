@@ -6,31 +6,31 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateDisciplinasTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('disciplinas', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nome');
-            $table->text('descricao');
-            $table->string('cargaHoraria');
-            $table->integer('professor_id');
-            $table->integer('periodo_id');
-            $table->timestamps();
-        });
-    }
+  /**
+  * Run the migrations.
+  *
+  * @return void
+  */
+  public function up()
+  {
+    Schema::create('disciplinas', function (Blueprint $table) {
+      $table->increments('id');
+      $table->string('nome');
+      $table->text('descricao');
+      $table->string('cargaHoraria');
+      $table->integer('professor_id');
+      $table->integer('periodo_id');
+      $table->timestamps();
+    });
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('disciplinas');
-    }
+  /**
+  * Reverse the migrations.
+  *
+  * @return void
+  */
+  public function down()
+  {
+    Schema::dropIfExists('disciplinas');
+  }
 }

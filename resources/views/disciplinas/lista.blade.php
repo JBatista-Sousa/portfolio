@@ -1,7 +1,5 @@
 @extends('layouts.template')
-
 @section('conteudo')
-
 <h3>listagem das Disciplinas</h3>
 <div class="row">
   <body>

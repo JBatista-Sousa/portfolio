@@ -6,29 +6,29 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateProfessoresTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('professores', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nome');
-            $table->string('formacao');
-            $table->string('titulacao');
-            $table->timestamps();
-        });
-    }
+  /**
+  * Run the migrations.
+  *
+  * @return void
+  */
+  public function up()
+  {
+    Schema::create('professores', function (Blueprint $table) {
+      $table->increments('id');
+      $table->string('nome');
+      $table->string('formacao');
+      $table->string('titulacao');
+      $table->timestamps();
+    });
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('professores');
-    }
+  /**
+  * Reverse the migrations.
+  *
+  * @return void
+  */
+  public function down()
+  {
+    Schema::dropIfExists('professores');
+  }
 }

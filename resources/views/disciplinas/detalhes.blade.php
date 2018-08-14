@@ -10,14 +10,10 @@
     <b>CargaHoraria:</b> {{$disciplina->cargaHoraria}}
   </li>
 </ul>
-
 <div>
   <a href="{{action('DisciplinaController@lista')}}">Listar Disciplinas</a>
 </div>
-
 <div>
   <a href="{{action('DisciplinaController@cadastro')}}">Página de Cadastro</a>
 </div>
-
-
 @endsection

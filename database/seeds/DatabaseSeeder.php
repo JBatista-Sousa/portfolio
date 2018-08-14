@@ -11,73 +11,73 @@ use App\Disciplina;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
-    public function run() {
-      
-      $curso1 = App\Curso::create([
-        'nome' => 'Informatica',
-        'descricao' => 'otimo curso',
-        'coordenador' => 'Fernando',
-        'cargaHoraria' => 1140
-      ]);
-      $curso2 = App\Curso::create([
-        'nome' => 'Administração',
-        'descricao' => 'bla bla bla',
-        'coordenador' => 'Libni',
-        'cargaHoraria' => 1010
-      ]);
-      
-      $professor1 = App\Professor::create([
-        'nome' => 'Francisco',
-        'formacao' => 'Adminisracao',
-        'titulacao' => 'Doutorado'
-      ]);
-      $professor2 = App\Professor::create([
-        'nome' => 'Werney',
-        'formacao' => 'Ciencia da Computacao',
-        'titulacao' => 'Mestrado'
-      ]);
+  /**
+  * Seed the application's database.
+  *
+  * @return void
+  */
+  public function run() {
 
-      $periodo1 = App\Periodo::create([
-        'nome' => 'Primeiro Modulo'
-      ]);
-      $periodo2 = App\Periodo::create([
-        'nome' => 'Quarto Modulo'
-      ]);
+    $curso1 = App\Curso::create([
+      'nome' => 'Informatica',
+      'descricao' => 'otimo curso',
+      'coordenador' => 'Fernando',
+      'cargaHoraria' => 1140
+    ]);
+    $curso2 = App\Curso::create([
+      'nome' => 'Administração',
+      'descricao' => 'bla bla bla',
+      'coordenador' => 'Libni',
+      'cargaHoraria' => 1010
+    ]);
 
-      $disciplina1 = App\Disciplina::create([
-        'nome' => 'Matematica',
-        'descricao' => 'Financeira',
-        'cargaHoraria' => '230'
-      ]);
+    $professor1 = App\Professor::create([
+      'nome' => 'Francisco',
+      'formacao' => 'Adminisracao',
+      'titulacao' => 'Doutorado'
+    ]);
+    $professor2 = App\Professor::create([
+      'nome' => 'Werney',
+      'formacao' => 'Ciencia da Computacao',
+      'titulacao' => 'Mestrado'
+    ]);
 
-      $disciplina2 = App\Disciplina::create([
-        'nome' => 'Portugues',
-        'descricao' => 'Verbos',
-        'cargaHoraria' => '230'
-      ]);
+    $periodo1 = App\Periodo::create([
+      'nome' => 'Primeiro Modulo'
+    ]);
+    $periodo2 = App\Periodo::create([
+      'nome' => 'Quarto Modulo'
+    ]);
 
-      $cursos = App\Curso::all();
-      $periodos = App\Periodo::all();
-      $disciplinas = App\Disciplina::all();
-      $professores = App\Professor::all();
+    $disciplina1 = App\Disciplina::create([
+      'nome' => 'Matematica',
+      'descricao' => 'Financeira',
+      'cargaHoraria' => '230'
+    ]);
 
-      $cursos[0]->periodos()->associate($periodos[0]->id);
-      $cursos[0]->periodos()->associate($periodos[1]->id);
+    $disciplina2 = App\Disciplina::create([
+      'nome' => 'Portugues',
+      'descricao' => 'Verbos',
+      'cargaHoraria' => '230'
+    ]);
 
-      $periodos[0]->disciplinas()->associate($disciplinas[0]->id);
-      $periodos[0]->disciplinas()->associate($disciplinas[1]->id);
+    $cursos = App\Curso::all();
+    $periodos = App\Periodo::all();
+    $disciplinas = App\Disciplina::all();
+    $professores = App\Professor::all();
 
-      $professores[0]->disciplinas()->associate($disciplinas[0]->id);
-      $professores[0]->disciplinas()->associate($disciplinas[1]->id);
+    $cursos[0]->periodos()->associate($periodos[0]->id);
+    $cursos[0]->periodos()->associate($periodos[1]->id);
 
-      $cursos[0]->professores()->attach($professores[0]->id);
-      $cursos[0]->professores()->attach($professores[1]->id);
+    $periodos[0]->disciplinas()->associate($disciplinas[0]->id);
+    $periodos[0]->disciplinas()->associate($disciplinas[1]->id);
+
+    $professores[0]->disciplinas()->associate($disciplinas[0]->id);
+    $professores[0]->disciplinas()->associate($disciplinas[1]->id);
+
+    $cursos[0]->professores()->attach($professores[0]->id);
+    $cursos[0]->professores()->attach($professores[1]->id);
 
 
-    }
+  }
 }

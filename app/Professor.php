@@ -6,18 +6,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Professor extends Model{
 
-    protected $table = 'professores';
+  protected $table = 'professores';
 
-    protected $fillable = ['nome', 'formacao', 'titulacao'];
+  protected $fillable = ['nome', 'formacao', 'titulacao'];
 
-    public function curso(){
-        return $this->belongsToMany('App\Curso');
-        //belongsToMany -> pertence a muitos cursos
-    }
+  public function curso(){
+    return $this->belongsToMany('App\Curso');
+    //belongsToMany -> pertence a muitos cursos
+  }
 
-    public function disciplina(){
-        return $this->hasMany('App\Disciplina');
-        //hasMany -> tem muitos // um professor tem muitas disciplinas
-    }
+  public function disciplina(){
+    return $this->hasMany('App\Disciplina');
+    //hasMany -> tem muitos // um professor tem muitas disciplinas
+  }
 
 }
