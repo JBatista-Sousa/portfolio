@@ -68,9 +68,12 @@ Route::post('professores/{id}', 'ProfessorController@update');
 
 
 
+//Periodos
+//Route::post('/cursos/periodos/adiciona', 'PeriodoController@adiciona');
 
+Route::get('/periodos/cadastro', 'PeriodoController@cadastro');
 
-
+//Route::post('/periodos', 'PeriodoController@lista');
 
 
 

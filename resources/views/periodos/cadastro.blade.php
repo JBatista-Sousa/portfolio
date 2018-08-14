@@ -12,7 +12,11 @@
 @endif
 <div class="row">
   <div class="col-md-4">
+<<<<<<< HEAD
     <form method="post" action="/periodos">
+=======
+    <form method="post" action="/cursos/periodos">
+>>>>>>> 1ccd6f4748404727ca8707b653f6247327958ebb
       @csrf
       <div class="form-group">
         <label for="nome">Nome</label>
@@ -23,4 +27,8 @@
     </form>
   </div>
 </div>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> 1ccd6f4748404727ca8707b653f6247327958ebb

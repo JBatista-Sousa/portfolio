@@ -17,7 +17,7 @@
       <div id="menu">
         <ul>
           <li><a href="#" accesskey="1" title="">Home</a></li>
-          <li><a href="#" accesskey="2" title="">Cursos</a></li>
+          <li><a href="{{action('CursoController@lista')}}" accesskey="2" title="">Cursos</a></li>
           <li><a href="#" accesskey="3" title="">Professores</a></li>
         </ul>
       </div>
