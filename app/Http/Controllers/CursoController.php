@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Curso;
+use App\Periodo;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 use App\Http\Requests\CursosRequest;
@@ -30,11 +31,13 @@ class CursoController extends Controller{
 
   public function mostra($id){
    // $resposta = DB::select('select * from cursos where id = ?',[$id]);
-    $resposta = Curso::find($id);
-    if (empty($resposta)) {
-      return "Esse curso não existe";
-    }
-    return view('cursos.detalhes')->with('curso', $resposta);
+    $curso = Curso::find($id);
+    ////////////////////
+    $periodos = Curso::find($id)->periodos();
+    /////////////////////
+  
+    return view('cursos.detalhes', ['curso' => $curso, 'periodos' => $periodos]);
+   
   }
 
   public function edita($id){
